@@ -2,11 +2,45 @@
 <html lang="es">
   <head>
     <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-  
+    <form class="form">
+      <h2 class="form__title">Inicia sesión</h2>
+      <p class="fomr__pargraph">
+        ¿Aún no tienes una cuenta? <a href="#" class="form__link">Entra aquí</a>
+      </p>
+
+      <div class="form__container">
+
+        <div class="form__group">
+          <input type="text" placeholder=" " id="name" class="form__input" />
+          <label for="name" class="form__label">Nombre: </label>
+          <span class="form__line"></span>
+        </div>
+
+        <div class="form__group">
+          <input type="text" placeholder=" " id="user" class="form__input" />
+          <label for="user" class="form__label">Usuario: </label>
+          <span class="form__line"></span>
+        </div>
+
+        <div class="form__group">
+          <input type="password" placeholder=" " id="password" class="form__input" />
+          <label for="password" class="form__label">Contraseña: </label>
+          <span class="form__line"></span>
+        </div>
+
+        <input type="submit" class="form__submit">Entrar</input>
+      </div>
+    </form>
   </body>
 </html>
